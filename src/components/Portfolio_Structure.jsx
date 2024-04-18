@@ -7,15 +7,15 @@ import { useState } from "react";
 const Portfolio_Structure = () => {
   let [background, setbg] = useState(Portfolio_structure);
 
-  // setInterval(() => {
-  //   let screenSize = innerWidth;
-  //   if (screenSize <= 1023) {
-  //     console.log(screenSize);
-  //     setbg(Portfolio_structure_sm);
-  //   } else {
-  //     setbg(Portfolio_structure);
-  //   }
-  // }, 0);
+  setInterval(() => {
+    let screenSize = innerWidth;
+    if (screenSize <= 1023) {
+      console.log(screenSize);
+      setbg(Portfolio_structure_sm);
+    } else {
+      setbg(Portfolio_structure);
+    }
+  }, 0);
 
   return (
     <>
@@ -35,20 +35,20 @@ const Portfolio_Structure = () => {
             <img
               className="mx-auto mt-0 hover:scale-110 hover:translate-x-4 hover:translate-y-4 hover:z-10 duration-700"
               src={Brokers}
-              alt="StockClubs_Comunity"
+              alt="Portfolio_structure"
             />
             <img
               className="mx-auto md:mt-[-180px] sm:mt-[-170px] mt-[-6rem] hover:scale-110 hover:z-10 duration-700"
               src={Accounts}
-              alt="StockClubs_Comunity"
+              alt="Portfolio_structure"
             />
             <img
-              className="mx-auto md:mt-[-250px] sm:mt-[-250px] mt-[-6rem] hover:scale-110 hover:translate-x-4 hover:-translate-y-4 hover:z-10 duration-700"
+              className="mx-auto md:mt-[-250px] sm:mt-[-250px] mt-[-7rem] hover:scale-110 hover:translate-x-4 hover:-translate-y-4 hover:z-10 duration-700"
               src={Account_Types}
-              alt="StockClubs_Comunity"
+              alt="Portfolio_structure"
             />
           </div>
-          <h3 className="w-full lg:pl-6 lg:w-2/5 font-semibold sm:text-2xl text-lg text-[#127398] text-center lg:text-left">
+          <h3 className="w-full pt-4 lg:pt-0 lg:pl-6 lg:w-2/5 font-semibold sm:text-2xl text-lg text-[#127398] text-center lg:text-left">
             <span className="font-bold sm:text-3xl text-xl">
               Track your net worth{" "}
             </span>

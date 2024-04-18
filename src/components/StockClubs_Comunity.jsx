@@ -7,15 +7,15 @@ import { useState } from "react";
 const StockClubs_Comunity = () => {
   let [background, setbg] = useState(Vector_Background);
 
-  // setInterval(() => {
-  //   let screenSize = innerWidth;
-  //   if (screenSize <= 1023) {
-  //     console.log(screenSize);
-  //     setbg(Vector_Background_sm);
-  //   } else {
-  //     setbg(Vector_Background);
-  //   }
-  // }, 0);
+  setInterval(() => {
+    let screenSize = innerWidth;
+    if (screenSize <= 1023) {
+      console.log(screenSize);
+      setbg(Vector_Background_sm);
+    } else {
+      setbg(Vector_Background);
+    }
+  }, 0);
 
   return (
     <>
@@ -45,7 +45,7 @@ const StockClubs_Comunity = () => {
               alt="StockClubs_Comunity"
             />
           </div>
-          <h3 className="w-full lg:pr-6 lg:w-2/5 font-semibold sm:text-2xl text-lg text-[#127398] order-2 lg:order-1 text-center lg:text-left">
+          <h3 className="w-full pt-4 lg:pt-0 lg:pr-12 lg:w-2/5 font-semibold sm:text-2xl text-lg text-[#127398] order-2 lg:order-1 text-center lg:text-left">
             <span className="font-bold sm:text-3xl text-xl">
               Connect your brokerage accounts{" "}
             </span>
