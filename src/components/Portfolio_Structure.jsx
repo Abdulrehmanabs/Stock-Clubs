@@ -10,7 +10,6 @@ const Portfolio_Structure = () => {
   setInterval(() => {
     let screenSize = innerWidth;
     if (screenSize <= 1023) {
-      console.log(screenSize);
       setbg(Portfolio_structure_sm);
     } else {
       setbg(Portfolio_structure);

@@ -10,7 +10,6 @@ const StockClubs_Comunity = () => {
   setInterval(() => {
     let screenSize = innerWidth;
     if (screenSize <= 1023) {
-      console.log(screenSize);
       setbg(Vector_Background_sm);
     } else {
       setbg(Vector_Background);
