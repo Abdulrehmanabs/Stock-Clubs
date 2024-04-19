@@ -617,6 +617,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.-mb-8 {
+  margin-bottom: -2rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -657,14 +661,6 @@ video {
   margin-top: -7rem;
 }
 
-.-mb-20 {
-  margin-bottom: -5rem;
-}
-
-.-mb-8 {
-  margin-bottom: -2rem;
-}
-
 .flex {
   display: flex;
 }
@@ -703,6 +699,10 @@ video {
 
 .max-w-screen-2xl {
   max-width: 1536px;
+}
+
+.max-w-\[430px\] {
+  max-width: 430px;
 }
 
 .flex-wrap {
@@ -810,25 +810,16 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1003,8 +994,8 @@ button:focus-visible {
     margin-bottom: 1rem;
   }
 
-  .sm\:-mt-20 {
-    margin-top: -5rem;
+  .sm\:-mb-14 {
+    margin-bottom: -3.5rem;
   }
 
   .sm\:mb-4 {
@@ -1035,10 +1026,6 @@ button:focus-visible {
     margin-top: -300px;
   }
 
-  .sm\:-mb-14 {
-    margin-bottom: -3.5rem;
-  }
-
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1047,11 +1034,6 @@ button:focus-visible {
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
   }
 
   .sm\:pb-20 {
@@ -1105,6 +1087,10 @@ button:focus-visible {
     order: 2;
   }
 
+  .lg\:-mb-20 {
+    margin-bottom: -5rem;
+  }
+
   .lg\:-ms-40 {
     margin-inline-start: -10rem;
   }
@@ -1123,14 +1109,6 @@ button:focus-visible {
 
   .lg\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .lg\:-mb-20 {
-    margin-bottom: -5rem;
-  }
-
-  .lg\:-mb-14 {
-    margin-bottom: -3.5rem;
   }
 
   .lg\:h-\[120\%\] {
