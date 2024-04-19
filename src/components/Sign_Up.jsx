@@ -1,16 +1,20 @@
 import Sign_Up_Comunity from "../assets/Sign-Up/Sign_Up_Community.svg";
 import QR_Code from "../assets/Sign-Up/Sign_Up_Community_QR_Code.svg";
 import Sign_Up_Bg from "../assets/backgrounds/Sign_Up_Background_Icons.svg";
+import Faces from "../assets/Faces.svg";
 
 const Sign_Up = () => {
   return (
     <>
+      <div className="max-w-screen-2xl px-6 mx-auto -mb-8 sm:-mb-14 lg:-mb-20 sticky z-20">
+        <img className="w-full" src={Faces} alt="Community Faces" />
+      </div>
       <div
-        className=" px-6 sm:py-20 py-10 relative overflow-hidden"
+        className=" px-6 sm:pb-20 pb-10 sm:pt-32 pt-14 relative overflow-hidden"
         style={{ background: "#00ABE1" }}
       >
         <img
-          className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] mx-auto"
           src={Sign_Up_Bg}
           alt="vector-background"
         />
