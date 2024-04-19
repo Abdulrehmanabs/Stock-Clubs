@@ -49,7 +49,7 @@ const Gardian_Angel = () => {
           <input
             type="text"
             placeholder="Notify me.."
-            className="mx-auto py-2 px-4 my-2 rounded-lg focus:outline-none max-w-[450px] w-[80%] sticky z-40"
+            className="mx-auto py-2 px-4 my-2 rounded-lg focus:outline-none max-w-[430px] w-[80%] sticky z-40"
           />
           <br />
           <button className="bg-blue-300 text-white my-4 px-10 py-1 rounded-full sticky z-40">
