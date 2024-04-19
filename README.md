@@ -1,1 +1,1 @@
-# https://stock-club.netlify.app/
+# Developed By ABS
