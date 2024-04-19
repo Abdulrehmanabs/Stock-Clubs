@@ -6,7 +6,7 @@ import Faces from "../assets/Faces.svg";
 const Sign_Up = () => {
   return (
     <>
-      <div className="max-w-screen-2xl px-6 mx-auto -mb-8 sm:-mb-14 lg:-mb-20 sticky z-20">
+      <div className="max-w-screen-2xl mx-auto -mb-8 sm:-mb-14 lg:-mb-20 sticky z-20">
         <img className="w-full" src={Faces} alt="Community Faces" />
       </div>
       <div
