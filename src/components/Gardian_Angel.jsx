@@ -18,7 +18,7 @@ const Gardian_Angel = () => {
   }, 0);
 
   return (
-    <div className="bg-[#FBBC12] px-6 sm:py-20 py-10 relative overflow-hidden">
+    <section className="bg-[#FBBC12] px-6 sm:py-20 py-10 relative overflow-hidden">
       <div>
         <img
           className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
@@ -32,17 +32,17 @@ const Gardian_Angel = () => {
             Introducing Gardian Angel 😇
           </h2>
           <img
-            className="mx-auto hover:scale-105  sticky sm:mb-4 mb-2 mt-20 lg:mt-6 z-40 duration-700"
+            className="mx-auto hover:scale-110  sticky sm:mb-4 mb-2 mt-20 lg:mt-6 z-40 duration-700"
             src={Amazonians}
             alt="StockClubs_Comunity"
           />
           <img
-            className="mx-auto hover:scale-105 sticky sm:my-4 my-2 z-40 duration-700"
+            className="mx-auto sticky sm:my-4 my-2 z-40"
             src={Googlers}
             alt="StockClubs_Comunity"
           />
           <img
-            className="mx-auto hover:scale-105   sticky sm:my-4 my-2 z-40 duration-700"
+            className="mx-auto sticky sm:my-4 my-2 z-40"
             src={stockClubs}
             alt="StockClubs_Comunity"
           />
@@ -64,7 +64,7 @@ const Gardian_Angel = () => {
           portfolio like a PRO.
         </h3>
       </div>
-    </div>
+    </section>
   );
 };
 

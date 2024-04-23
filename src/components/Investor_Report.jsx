@@ -17,13 +17,13 @@ const Investor_Report = () => {
     }
   }, 0);
   return (
-    <div
+    <section
       style={{ backgroundColor: "#9F73C2" }}
       className="px-6 sm:py-20 py-10 relative overflow-hidden"
     >
       <div>
         <img
-          className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
           src={background}
           alt="vector-background"
         />
@@ -34,17 +34,17 @@ const Investor_Report = () => {
             Investor Reports
           </h2>
           <img
-            className=" hover:translate-x-4 mt-20 lg:mt-0 hover:z-20 z-10 duration-700"
+            className=" mt-20 lg:mt-0 z-10 "
             src={_3by1}
             alt="Portfolio_structure"
           />
           <img
-            className="ml-[-300px] sm:ml-[-400px] mt-20 lg:mt-0 hover:translate-x-10 hover:z-20 z-10 duration-700"
+            className="ml-[-300px] sm:ml-[-400px] mt-20 lg:mt-0 hover:translate-x-10 hover:-translate-y-6 z-10 duration-700"
             src={_2by1}
             alt="Portfolio_structure"
           />
           <img
-            className="ml-[-340px] sm:ml-[-450px] mt-10 lg:mt-0 hover:translate-x-4 hover:z-20 z-10 duration-700"
+            className="ml-[-340px] sm:ml-[-450px] mt-10 lg:mt-0 z-10"
             src={_1by1}
             alt="Portfolio_structure"
           />
@@ -57,7 +57,7 @@ const Investor_Report = () => {
           wealth.
         </h3>
       </div>
-    </div>
+    </section>
   );
 };
 

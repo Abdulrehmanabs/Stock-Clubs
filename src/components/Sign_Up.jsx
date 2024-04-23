@@ -5,7 +5,7 @@ import Faces from "../assets/Faces.svg";
 
 const Sign_Up = () => {
   return (
-    <>
+    <section className="lg:block hidden">
       <div className="max-w-screen-2xl mx-auto -mb-8 sm:-mb-14 lg:-mb-20 sticky z-20">
         <img className="w-full" src={Faces} alt="Community Faces" />
       </div>
@@ -14,7 +14,7 @@ const Sign_Up = () => {
         style={{ background: "#00ABE1" }}
       >
         <img
-          className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] mx-auto"
+          className="absolute z-10 top-0 left-0 right-0 max-w-screen-2xl h-full mx-auto"
           src={Sign_Up_Bg}
           alt="vector-background"
         />
@@ -27,7 +27,7 @@ const Sign_Up = () => {
             <div className=" bg-white sticky z-20 h-[100%] rounded-2xl px-10 sm:px-20 py-8 flex justify-center items-center flex-wrap">
               <div className="relative w-full lg:w-5/12 ">
                 <img
-                  className="mb-0 mx-auto lg:-ms-40 hover:scale-110 duration-700 hover:-translate-x-4"
+                  className="mb-0 mx-auto lg:-ms-40"
                   src={Sign_Up_Comunity}
                   alt="Sign_Up_Comunity"
                 />
@@ -44,7 +44,7 @@ const Sign_Up = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -17,11 +17,11 @@ const StockClubs_Comunity = () => {
   }, 0);
 
   return (
-    <>
+    <section>
       <div className="bg-[#3994E9] px-6 sm:py-20 py-10 relative overflow-hidden">
         <div>
           <img
-            className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+            className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
             src={background}
             alt="vector-background"
           />
@@ -29,12 +29,12 @@ const StockClubs_Comunity = () => {
         <div className=" bg-white sticky z-20 rounded-2xl px-10 sm:px-20 py-8 flex justify-center items-center flex-wrap max-w-screen-2xl mx-auto">
           <div className="relative w-full lg:w-3/5  order-1 lg:order-2">
             <img
-              className="mx-auto mt-0 hover:scale-110 hover:translate-x-4 hover:translate-y-4 hover:z-10 duration-700"
+              className="mx-auto mt-0"
               src={Amazonians}
               alt="StockClubs_Comunity"
             />
             <img
-              className="mx-auto md:mt-[-320px] sm:mt-[-300px] mt-[-7rem] hover:scale-110 hover:z-10 duration-700"
+              className="mx-auto md:mt-[-320px] sm:mt-[-300px] mt-[-7rem]"
               src={Googlers}
               alt="StockClubs_Comunity"
             />
@@ -53,7 +53,7 @@ const StockClubs_Comunity = () => {
           </h3>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
