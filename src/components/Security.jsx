@@ -23,7 +23,7 @@ const Security = () => {
           src={background}
           alt="Security-background"
         />
-        <h3 className="mx-auto max-w-screen-lg text-center text-white sticky z-20 text-4xl font-semibold">
+        <h3 className="mx-auto max-w-screen-lg text-center text-white sticky z-20 sm:text-4xl text-2xl font-semibold">
           SECURITY IS OUR PRIORITY
         </h3>
         <div className="text-center bg-white lg:bg-transparent sticky z-20 rounded-2xl max-w-screen-2xl mx-auto">
@@ -65,7 +65,7 @@ const Security = () => {
           </div>
           <button
             href="/"
-            className="p-4 sm:px-10 bg-[#FFC730] mb-6 lg:mb-0 text-white text-2xl max-w-[400px] rounded-lg"
+            className="sm:p-4 p-3 sm:px-10 bg-[#FFC730] mb-6 lg:mb-0 text-white text-2xl max-w-[400px] rounded-lg"
           >
             Learn More About Security
           </button>
