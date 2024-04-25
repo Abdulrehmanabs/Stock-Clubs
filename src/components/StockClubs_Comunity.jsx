@@ -34,7 +34,7 @@ const StockClubs_Comunity = () => {
               alt="StockClubs_Comunity"
             />
             <img
-              className="mx-auto md:mt-[-220px] sm:mt-[-200px] mt-[-7rem] hover:scale-110 hover:translate-x-4 hover:-translate-y-4 hover:z-10 duration-700"
+              className="mx-auto md:mt-[-220px] sm:mt-[-200px] mt-[-7rem] sm:hover:scale-110 sm:hover:translate-x-4 sm:hover:-translate-y-4 sm:hover:z-10 duration-700"
               src={stockClubs}
               alt="StockClubs_Comunity"
             />

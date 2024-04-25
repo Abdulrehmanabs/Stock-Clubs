@@ -1,9 +1,15 @@
+import { useForm } from "react-hook-form";
 import Contact_Us_bg from "../assets/backgrounds/Contact-Us-Background-Icons.svg";
 import Contact_Us_bg_sm from "../assets/backgrounds/Contact-Us-Small-Background-Icons.svg";
 import contact_us_large from "../assets/Contact-Us/contact-us-large.svg";
 import contact_us_small from "../assets/Contact-Us/contact-us-small.svg";
 
 const Contact_Us = () => {
+  const { register, handleSubmit } = useForm();
+  const formData = (data) => {
+    console.log(data);
+  };
+  
   return (
     <section>
       <div className="bg-[#127398] px-6 sm:py-20 py-10 relative overflow-hidden">
@@ -39,26 +45,31 @@ const Contact_Us = () => {
           </div>
           <form
             action=""
+            onSubmit={handleSubmit(formData)}
             className="md:w-6/12 w-full ms-auto lg:p-20 md:p-10 p-4 md:bg-[#00ABE1] rounded-3xl"
           >
             <div className="md:flex md:gap-8">
               <input
+                {...register("first_name", { required: true })}
                 className="md:w-6/12 w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
                 placeholder="First Name"
                 type="text"
               />
               <input
+                {...register("last_name", { required: true })}
                 className="md:w-6/12 w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
                 placeholder="Last Name"
                 type="text"
               />
             </div>
             <input
+                {...register("email", { required: true })}
               className="w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
               placeholder="Email"
               type="email"
             />
             <textarea
+                {...register("message", { required: true })}
               rows="6"
               className="w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
               placeholder="Write a message"

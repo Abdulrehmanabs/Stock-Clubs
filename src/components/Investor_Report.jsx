@@ -34,7 +34,7 @@ const Investor_Report = () => {
             alt="Portfolio_structure"
           />
           <img
-            className="ml-[-300px] sm:ml-[-400px] mt-20 lg:mt-0 hover:translate-x-10 hover:-translate-y-6 z-10 duration-700"
+            className="ml-[-300px] sm:ml-[-400px] mt-20 lg:mt-0 sm:hover:translate-x-10 sm:hover:-translate-y-6 z-10 duration-700"
             src={_2by1}
             alt="Portfolio_structure"
           />

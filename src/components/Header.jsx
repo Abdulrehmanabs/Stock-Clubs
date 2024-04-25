@@ -1,7 +1,15 @@
 import vector_background from "../assets/Background.svg";
 import Apple_Store from "../assets/Apple-Store-Button.svg";
 import Google_Play from "../assets/GooglePlay-Button.svg";
+import { useForm } from "react-hook-form";
 const Header = () => {
+  
+  const { register, handleSubmit } = useForm();
+
+  const formData = (data) => {
+    console.log(data);
+  };
+
   return (
     <section>
       <div className="px-6 sm:py-20 py-10 overflow-hidden flex flex-wrap items-center max-w-screen-2xl mx-auto">
@@ -37,16 +45,23 @@ const Header = () => {
               src={vector_background}
               alt="background"
             />
-            <form action="/" className="p-10 sticky z-40 bg-white rounded-3xl">
+            <form
+              onSubmit={handleSubmit(formData)}
+              action="/"
+              className="p-10 sticky z-40 bg-white rounded-3xl"
+            >
               <h3 className="mb-4 xl:text-5xl text-4xl font-semibold text-center text-[#00ABE1]">
                 Welcome Back
               </h3>
               <input
+                {...register("email", { required: true })}
                 className="w-full my-6 p-4 text-xl font-bold border border-[#00ABE1] placeholder:text-[#BFEAF7] text-[#127398] bg-[#F5FAFF] rounded-xl focus:outline-none "
                 placeholder="Username"
                 type="email"
               />
+
               <input
+                {...register("password", { required: true })}
                 className="w-full my-4 mb-2 p-4 text-xl font-bold border border-[#00ABE1] placeholder:text-[#BFEAF7] text-[#127398] bg-[#F5FAFF] rounded-xl focus:outline-none "
                 placeholder="Password"
                 type="password"

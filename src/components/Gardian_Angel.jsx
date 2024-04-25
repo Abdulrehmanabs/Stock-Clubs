@@ -26,7 +26,7 @@ const Gardian_Angel = () => {
             Introducing Gardian Angel 😇
           </h2>
           <img
-            className="mx-auto hover:scale-110 sticky sm:mb-4 mb-2 mt-20 lg:mt-6 z-40 duration-700"
+            className="mx-auto sm:hover:scale-110 sticky sm:mb-4 mb-2 mt-20 lg:mt-6 z-40 duration-700"
             src={Amazonians}
             alt="StockClubs_Comunity"
           />

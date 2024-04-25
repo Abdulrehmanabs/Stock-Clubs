@@ -26,7 +26,7 @@ const Security = () => {
         </h3>
         <div className="text-center bg-white lg:bg-transparent sticky z-20 rounded-2xl max-w-screen-2xl mx-auto">
           <div className="my-10 grid lg:gap-6 lg:grid-cols-3 grid-cols-1 text-center">
-            <div className="bg-white px-6 py-10 text-center rounded-3xl text-[#127398] sm:text-3xl text-xl">
+            <div className="bg-white px-6 py-10 md:py-20 text-center rounded-3xl text-[#127398] sm:text-3xl text-xl">
               <img src={powered_by_aws} className="mx-auto" alt="icon" />
               <h3 className="font-bold mb-6 mt-8 ">Cloud Infrastructure</h3>
               <p className="sm:text-2xl texl-lg">
@@ -38,7 +38,7 @@ const Security = () => {
               <h2></h2>
             </div>
             <hr className="lg:hidden block h-[2px] bg-[#127398] mx-10" />
-            <div className="bg-white px-6 py-10 text-center rounded-3xl text-[#127398] sm:text-3xl text-xl">
+            <div className="bg-white px-6 py-10 md:py-20 text-center rounded-3xl text-[#127398] sm:text-3xl text-xl">
               <img src={PLAID} className="mx-auto" alt="icon" />
               <h3 className="font-bold mb-6 mt-8 ">Secure Broker Connection</h3>
               <p className="sm:text-2xl texl-lg">
@@ -50,7 +50,7 @@ const Security = () => {
               </p>
             </div>
             <hr className="lg:hidden block h-[2px] bg-[#127398] mx-10" />
-            <div className="bg-white px-6 py-10 text-center rounded-3xl text-[#127398] sm:text-3xl text-xl">
+            <div className="bg-white px-6 py-10 md:py-20 text-center rounded-3xl text-[#127398] sm:text-3xl text-xl">
               <img src={AES_256} className="mx-auto" alt="icon" />
               <h3 className="font-bold mb-6 mt-8 ">Data Encryption</h3>
               <p className="sm:text-2xl texl-lg">

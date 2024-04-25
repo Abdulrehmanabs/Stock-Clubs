@@ -36,7 +36,7 @@ const Portfolio_Structure = () => {
             alt="Portfolio_structure"
           />
           <img
-            className="mx-auto md:mt-[-250px] sm:mt-[-250px] mt-[-7rem] hover:scale-110 hover:translate-x-4 hover:-translate-y-4 hover:z-10 duration-700"
+            className="mx-auto md:mt-[-250px] sm:mt-[-250px] mt-[-7rem] sm:hover:scale-110 sm:hover:translate-x-4 sm:hover:-translate-y-4 sm:hover:z-10 duration-700"
             src={Account_Types}
             alt="Portfolio_structure"
           />
