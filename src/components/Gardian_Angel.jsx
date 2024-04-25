@@ -8,14 +8,14 @@ import { useState } from "react";
 const Gardian_Angel = () => {
   let [background, setbg] = useState(Vector_Background);
 
-  // setInterval(() => {
-  //   let screenSize = innerWidth;
-  //   if (screenSize <= 1023) {
-  //     setbg(Vector_Background_sm);
-  //   } else {
-  //     setbg(Vector_Background);
-  //   }
-  // }, 0);
+  setInterval(() => {
+    let screenSize = innerWidth;
+    if (screenSize <= 1023) {
+      setbg(Vector_Background_sm);
+    } else {
+      setbg(Vector_Background);
+    }
+  }, 0);
 
   return (
     <section className="bg-[#FBBC12] px-6 sm:py-20 py-10 relative overflow-hidden">
@@ -32,7 +32,7 @@ const Gardian_Angel = () => {
             Introducing Gardian Angel 😇
           </h2>
           <img
-            className="mx-auto hover:scale-110  sticky sm:mb-4 mb-2 mt-20 lg:mt-6 z-40 duration-700"
+            className="mx-auto hover:scale-110 sticky sm:mb-4 mb-2 mt-20 lg:mt-6 z-40 duration-700"
             src={Amazonians}
             alt="StockClubs_Comunity"
           />

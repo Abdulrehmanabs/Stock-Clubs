@@ -7,14 +7,14 @@ import { useState } from "react";
 const StockClubs_Comunity = () => {
   let [background, setbg] = useState(Vector_Background);
 
-  // setInterval(() => {
-  //   let screenSize = innerWidth;
-  //   if (screenSize <= 1023) {
-  //     setbg(Vector_Background_sm);
-  //   } else {
-  //     setbg(Vector_Background);
-  //   }
-  // }, 0);
+  setInterval(() => {
+    let screenSize = innerWidth;
+    if (screenSize <= 1023) {
+      setbg(Vector_Background_sm);
+    } else {
+      setbg(Vector_Background);
+    }
+  }, 0);
 
   return (
     <section>
