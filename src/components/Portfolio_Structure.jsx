@@ -7,14 +7,14 @@ import { useState } from "react";
 const Portfolio_Structure = () => {
   let [background, setbg] = useState(Portfolio_structure);
 
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Portfolio_structure_sm);
-    } else {
-      setbg(Portfolio_structure);
-    }
-  }, 0);
+  // setInterval(() => {
+  //   let screenSize = innerWidth;
+  //   if (screenSize <= 1023) {
+  //     setbg(Portfolio_structure_sm);
+  //   } else {
+  //     setbg(Portfolio_structure);
+  //   }
+  // }, 0);
 
   return (
     <section

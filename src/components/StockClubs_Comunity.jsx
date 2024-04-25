@@ -7,25 +7,23 @@ import { useState } from "react";
 const StockClubs_Comunity = () => {
   let [background, setbg] = useState(Vector_Background);
 
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Vector_Background_sm);
-    } else {
-      setbg(Vector_Background);
-    }
-  }, 0);
+  // setInterval(() => {
+  //   let screenSize = innerWidth;
+  //   if (screenSize <= 1023) {
+  //     setbg(Vector_Background_sm);
+  //   } else {
+  //     setbg(Vector_Background);
+  //   }
+  // }, 0);
 
   return (
     <section>
       <div className="bg-[#3994E9] px-6 sm:py-20 py-10 relative overflow-hidden">
-        <div>
-          <img
-            className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
-            src={background}
-            alt="vector-background"
-          />
-        </div>
+        <img
+          className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
+          src={background}
+          alt="vector-background"
+        />
         <div className=" bg-white sticky z-20 rounded-2xl px-10 sm:px-20 py-8 flex justify-center items-center flex-wrap max-w-screen-2xl mx-auto">
           <div className="relative w-full lg:w-3/5  order-1 lg:order-2">
             <img

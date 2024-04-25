@@ -9,10 +9,7 @@ const Sign_Up = () => {
       <div className="max-w-screen-2xl mx-auto -mb-8 sm:-mb-14 lg:-mb-20 sticky z-20">
         <img className="w-full" src={Faces} alt="Community Faces" />
       </div>
-      <div
-        className=" px-6 sm:pb-20 pb-10 sm:pt-32 pt-14 relative overflow-hidden"
-        style={{ background: "#00ABE1" }}
-      >
+      <div className="bg-[#00ABE1] px-6 sm:pb-20 pb-10 sm:pt-32 pt-14 relative overflow-hidden">
         <img
           className="absolute z-10 top-0 left-0 right-0 max-w-screen-2xl h-full mx-auto"
           src={Sign_Up_Bg}

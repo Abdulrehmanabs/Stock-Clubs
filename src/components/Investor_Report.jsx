@@ -8,14 +8,15 @@ import { useState } from "react";
 const Investor_Report = () => {
   let [background, setbg] = useState(Investor_Reports);
 
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Investor_Reports_sm);
-    } else {
-      setbg(Investor_Reports);
-    }
-  }, 0);
+  // setInterval(() => {
+  //   let screenSize = innerWidth;
+  //   if (screenSize <= 1023) {
+  //     setbg(Investor_Reports_sm);
+  //   } else {
+  //     setbg(Investor_Reports);
+  //   }
+  // }, 0);
+
   return (
     <section
       style={{ backgroundColor: "#9F73C2" }}
