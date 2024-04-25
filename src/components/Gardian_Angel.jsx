@@ -3,26 +3,20 @@ import Googlers from "../assets/Guardian-Angel/Milestone_2.svg";
 import Amazonians from "../assets/Guardian-Angel/Milestone_1.svg";
 import Vector_Background from "../assets/backgrounds/Guardian-Angel-Background-Icons.svg";
 import Vector_Background_sm from "../assets/backgrounds/Guardian-Angel-small-Background-Icons.svg";
-import { useState } from "react";
 
 const Gardian_Angel = () => {
-  let [background, setbg] = useState(Vector_Background);
-
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Vector_Background_sm);
-    } else {
-      setbg(Vector_Background);
-    }
-  }, 0);
 
   return (
     <section className="bg-[#FBBC12] px-6 sm:py-20 py-10 relative overflow-hidden">
       <div>
         <img
-          className="absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
-          src={background}
+          className="lg:block hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Vector_Background}
+          alt="vector-background"
+        />
+        <img
+          className="block lg:hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Vector_Background_sm}
           alt="vector-background"
         />
       </div>

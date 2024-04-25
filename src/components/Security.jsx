@@ -3,26 +3,24 @@ import Security_Backgroung_sm from "../assets/backgrounds/Security-Small-Backgro
 import powered_by_aws from "../assets/Security-Icons/powered_by_aws.svg";
 import PLAID from "../assets/Security-Icons/PLAID.svg";
 import AES_256 from "../assets/Security-Icons/AES_256.svg";
-import { useState } from "react";
-const Security = () => {
-  let [background, setbg] = useState(Security_Backgroung);
 
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Security_Backgroung_sm);
-    } else {
-      setbg(Security_Backgroung);
-    }
-  }, 500);
+const Security = () => {
+  
   return (
     <section>
       <div className="bg-[#009BCC] px-6 sm:py-20 py-10 relative overflow-hidden">
+      <div>
         <img
-          className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
-          src={background}
-          alt="Security-background"
+          className="lg:block hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Security_Backgroung}
+          alt="vector-background"
         />
+        <img
+          className="block lg:hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Security_Backgroung_sm}
+          alt="vector-background"
+        />
+      </div>
         <h3 className="mx-auto max-w-screen-lg text-center text-white sticky z-20 sm:text-4xl text-2xl font-semibold">
           SECURITY IS OUR PRIORITY
         </h3>

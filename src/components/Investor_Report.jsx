@@ -3,19 +3,8 @@ import _2by1 from "../assets/Investor-Report/IR-2-1.svg";
 import _3by1 from "../assets/Investor-Report/IR-3-1.svg";
 import Investor_Reports from "../assets/backgrounds/Investor-report-Background-Icons.svg";
 import Investor_Reports_sm from "../assets/backgrounds/Investor-report-small-Background-Icons.svg";
-import { useState } from "react";
 
 const Investor_Report = () => {
-  let [background, setbg] = useState(Investor_Reports);
-
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Investor_Reports_sm);
-    } else {
-      setbg(Investor_Reports);
-    }
-  }, 0);
 
   return (
     <section
@@ -24,8 +13,13 @@ const Investor_Report = () => {
     >
       <div>
         <img
-          className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
-          src={background}
+          className="lg:block hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Investor_Reports}
+          alt="vector-background"
+        />
+        <img
+          className="block lg:hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Investor_Reports_sm}
           alt="vector-background"
         />
       </div>

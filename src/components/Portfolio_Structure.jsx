@@ -3,29 +3,26 @@ import Accounts from "../assets/Portfolio-Structure/Accounts-card.svg";
 import Brokers from "../assets/Portfolio-Structure/Brokers-Card.svg";
 import Portfolio_structure from "../assets/backgrounds/Portfolio-structure-Background-Icons.svg";
 import Portfolio_structure_sm from "../assets/backgrounds/Portfolio-structure-small-Background-Icons.svg";
-import { useState } from "react";
-const Portfolio_Structure = () => {
-  let [background, setbg] = useState(Portfolio_structure);
 
-  setInterval(() => {
-    let screenSize = innerWidth;
-    if (screenSize <= 1023) {
-      setbg(Portfolio_structure_sm);
-    } else {
-      setbg(Portfolio_structure);
-    }
-  }, 0);
+const Portfolio_Structure = () => {
 
   return (
     <section
       className=" px-6 sm:py-20 py-10 relative overflow-hidden"
       style={{ background: "#31CE5D" }}
     >
-      <img
-        className="absolute z-10 top-0 left-0 right-0 w-full h-full max-w-screen-2xl mx-auto"
-        src={background}
-        alt="vector-background"
-      />
+      <div>
+        <img
+          className="lg:block hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Portfolio_structure}
+          alt="vector-background"
+        />
+        <img
+          className="block lg:hidden absolute z-10 top-0 left-0 right-0 w-[100%] h-[100%] max-w-screen-2xl mx-auto"
+          src={Portfolio_structure_sm}
+          alt="vector-background"
+        />
+      </div>
       <div className=" bg-white sticky z-20 rounded-2xl px-10 sm:px-20 py-8 flex justify-center items-center flex-wrap max-w-screen-2xl mx-auto">
         <div className="relative w-full lg:w-3/5 ">
           <img

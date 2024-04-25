@@ -41,16 +41,18 @@ const Contact_Us = () => {
             action=""
             className="md:w-6/12 w-full ms-auto lg:p-20 md:p-10 p-4 md:bg-[#00ABE1] rounded-3xl"
           >
-            <input
-              className="md:w-6/12 w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
-              placeholder="First Name"
-              type="text"
-            />
-            <input
-              className="md:w-6/12 w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
-              placeholder="Last Name"
-              type="text"
-            />
+            <div className="md:flex md:gap-8">
+              <input
+                className="md:w-6/12 w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
+                placeholder="First Name"
+                type="text"
+              />
+              <input
+                className="md:w-6/12 w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
+                placeholder="Last Name"
+                type="text"
+              />
+            </div>
             <input
               className="w-full font-semibold text-[#127398] placeholder:text-[#BFEAF7] text-xl sm:py-4 py-3 px-2 my-4 rounded-md focus:outline-none"
               placeholder="Email"
